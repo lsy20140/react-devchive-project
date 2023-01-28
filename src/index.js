@@ -23,6 +23,7 @@ const router = createBrowserRouter([
     errorElement: <NotFound/>,
     children: [
       {index: true, element: <Home/>},
+      {path: '/home', element: <Home/>},
       {path: '/memos', element: <Memos/>},
       {path: '/memos/new', element: <NewMemo/>},
       {path: '/memos/:id', element: <MemoDetail/>},

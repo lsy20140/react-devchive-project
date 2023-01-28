@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
 import { useAuthContext } from '../context/AuthContext';
 import '../index.css'
 import styles from '../styles/header.module.css'
 import Button from './ui/Button';
+import {IoIosArrowDown} from 'react-icons/io'
 
 export default function Header() {
   const {user, login, logout} = useAuthContext();
@@ -14,19 +15,30 @@ export default function Header() {
         <img src='logo.png'/>
         <h2>DEVCHIVE</h2>
       </Link>
-
       
       <nav>
+        <Link to='/'>홈</Link>
         <Link to='/memos'>메모</Link>
         <Link to='/errorarchive'>오류 모음</Link>
         <Link to='/studylist'>계획</Link>
         <Link to='/music'>뮤직</Link>
-        {user && <Link to='/mypage'>마이페이지</Link>}
       </nav>
-      {user && user.displayName}
-      {!user && <Button text='로그인' onClick={login}/>}
-      {user && <Button text='로그아웃' onClick={logout}/>}
-      
+      { !user && <Button text='로그인' onClick={login} />}
+      {user && 
+        <div className={styles.profile}>
+          <img className={styles.profileImg} src={user.photoURL}/>
+          <div>{user.displayName}</div>
+          <IoIosArrowDown/>
+          <ul>
+            <li className={styles.subItem}>
+              <p>나의 프로필</p>
+            </li>
+            <li className={styles.subItem} onClick={logout}>
+              <p>로그아웃</p>
+            </li>
+          </ul>
+        </div>
+      }
     </header>
   )
 }

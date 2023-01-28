@@ -11,7 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
   vertical-align: middle;
-  padding: 3rem 0;
+  padding: 1.5rem 0;
 }
 
 code {
@@ -22,12 +22,10 @@ code {
 :root {
   --white: #fff;
   --brand-base: #4754CA;
-
 }
 
 a {
   text-decoration: none;
-
 }
 
 button{

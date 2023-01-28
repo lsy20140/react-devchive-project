@@ -3,22 +3,74 @@
 nav {
   display: flex;
   gap: 4rem;
-  margin-left: 4rem;
 }
 
 nav > a{
   color: #1f1f1f;
-
 }
 
 .logo {
-  vertical-align: middle;
-  color: rgb(45, 130, 140);
+  display: flex;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  align-items: center;
 }
 
-.logo > a {
+.logo > img {
+  transform: scale(120%);
+}
+
+.logo > h2 {
   font-family: 'Lilita One', cursive;
-  font-size: 1.75rem;
+  font-size: 1.8rem;
   color: var(--brand-base);
-  margin-left: 0.5rem;
+  margin-left: 0.75rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #625F68;
+  font-size: 90%;
+  position: relative;
+}
+
+.profileImg {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 100%;
+}
+
+.profile ul {
+  display: none;
+  position: absolute;
+  top: 1.2rem;
+}
+
+.profile:hover ul{
+  display: block;
+}
+
+.subItem {
+  width: 100%;
+  display: flex;
+  padding: 0 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.subItem:hover {
+  background-color: #625f680c;
+}
+
+.subItem:hover p {
+  color: #000;
+}
+
+.subItem p {
+  font-size: 0.85rem;
+  color: #625F68;
+  font-weight: 500;
+  margin: 0.4rem 0;
 }
