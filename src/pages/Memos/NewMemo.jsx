@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
+import { addNewMemo } from '../../api/firebase';
 import Button from '../../components/ui/Button'
+import { useAuthContext } from '../../context/AuthContext';
 import styles from '../../styles/newMemo.module.css'
 
 export default function NewMemo() {
 
+  const {uid} = useAuthContext();
   const [memo, setMemo] = useState({});
+  const [success, setSuccess] = useState();
+  const [error, setError] = useState(false);
 
   const handleChange = (e) => {
     const {name, value} = e.target;
@@ -14,6 +19,18 @@ export default function NewMemo() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // firebase에 추가
+    addNewMemo(uid, memo)
+    .then(() => {
+      setSuccess('메모가 성공적으로 추가되었습니다')
+      setTimeout(() => {
+        setSuccess(null);
+      }, 3000);
+    })
+    .catch(e => setError('에러발생!!'))
+    .finally(() => {
+      setMemo({})
+    })
+
 
   }
 
@@ -26,7 +43,7 @@ export default function NewMemo() {
           type='text' 
           id='title' 
           name='title' 
-          value={memo.title}
+          value={memo.title ?? ''}
           placeholder='메모 제목을 입력하세요.' 
           onChange={handleChange}/><br/>  
 
@@ -40,7 +57,7 @@ export default function NewMemo() {
         <label htmlFor='text'>내용</label><br/>  
         <textarea
           name='mainText'
-          value={memo.mainText}
+          value={memo.mainText ?? ''}
           cols='100' rows='10' 
           placeholder='mainText'
           onChange={handleChange}></textarea><br/>  
