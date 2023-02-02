@@ -1,6 +1,7 @@
 button {
   cursor: pointer;
-  width: fit-content;
+  width: 100%;
+  height: fit-content;
   padding: 0.4rem 1.2rem;
   border: none;
   border-radius: 0.25rem;

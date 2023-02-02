@@ -1,4 +1,29 @@
-form {
+.input_container {
+  display: flex;
+  gap: 2rem;
+}
+
+.leftSide, .rightSide {
   display: flex;
   flex-direction: column;
+}
+
+.rightSide {
+  display: flex;
+  width: 100%;  
+}
+
+.rightSide label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.codePack{
+  height: 100vh;
+  overflow: auto;
+}
+
+.codeBox {
+  height: fit-content;
+  margin-bottom: 1.5rem;
 }
