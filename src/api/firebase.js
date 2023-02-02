@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, ref, get, set } from "firebase/database";
 import { getAuth, signInWithPopup, signOut, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
 import {v4 as uuid} from 'uuid';
 
@@ -42,7 +42,18 @@ export function onUserStateChange(callback) {
   })
 }
 
-export function addNewMemo(userId, memo) {
+export async function addNewMemo(userId, memo) {
   const id = uuid();
   return set(ref(db, `memos/${userId}/${id}`), memo);
+}
+
+export async function getMemos(userId) {
+  return get(ref(db, `memos/${userId}`))
+  .then((snapshot) => {
+    if(snapshot.exists()){
+      console.log(snapshot.val())
+      return Object.values(snapshot.val());
+    }
+    return [];
+  })
 }
