@@ -1,6 +1,8 @@
 import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
+import { getDatabase, ref, set } from "firebase/database";
 import { getAuth, signInWithPopup, signOut, GoogleAuthProvider, onAuthStateChanged } from "firebase/auth";
+import {v4 as uuid} from 'uuid';
+
 
 
 const firebaseConfig = {
@@ -11,7 +13,7 @@ const firebaseConfig = {
 }
 
 const app = initializeApp(firebaseConfig);
-const database = getDatabase(app);
+const db = getDatabase(app);
 const provider = new GoogleAuthProvider();
 const auth = getAuth();
 
@@ -38,4 +40,9 @@ export function onUserStateChange(callback) {
   onAuthStateChanged(auth, async (user) => {
     callback(user);
   })
+}
+
+export function addNewMemo(userId, memo) {
+  const id = uuid();
+  return set(ref(db, `memos/${userId}/${id}`), memo);
 }
