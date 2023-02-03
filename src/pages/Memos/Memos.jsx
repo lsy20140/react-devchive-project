@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { getMemos } from '../../api/firebase';
 import { useAuthContext } from '../../context/AuthContext'
 import {useQuery} from '@tanstack/react-query'
+import styles from '../../styles/memos.module.css'
+import MemoCard from '../../components/MemoCard';
 
 
 export default function Memos() {
@@ -12,16 +14,17 @@ export default function Memos() {
   const hasMemos = memos && memos.length >0
   
   return (
-    <div>
+    <section>
+      <h3 >메모 목록</h3>
       {!hasMemos && <p>메모가 없습니다.</p>}
       {hasMemos && 
       <ul>
         {memos && memos.map((memo) => (
-          <li key={memo.id}>{memo.title} {memo.refLink}</li>
+          <MemoCard key={memo.id} memo={memo}/>
         ))}
       </ul>
       }
 
-    </div>
+    </section>
   )
 }
