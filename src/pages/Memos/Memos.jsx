@@ -15,8 +15,8 @@ export default function Memos() {
   const hasMemos = memos && memos.length >0
 
   const date = new Date();
-  
-  memos.sort((a,b) => {
+
+  memos && memos.sort((a,b) => {
     return diffSec(a.createdAt, date) - diffSec(b.createdAt, date)
   })
   
