@@ -4,6 +4,7 @@ import { useAuthContext } from '../../context/AuthContext'
 import {useQuery} from '@tanstack/react-query'
 import styles from '../../styles/memos.module.css'
 import MemoCard from '../../components/MemoCard';
+import {diffSec} from 'timeago.js/lib/utils/date'
 
 
 export default function Memos() {
@@ -12,6 +13,12 @@ export default function Memos() {
     enabled: !!uid
   })
   const hasMemos = memos && memos.length >0
+
+  const date = new Date();
+  
+  memos.sort((a,b) => {
+    return diffSec(a.createdAt, date) - diffSec(b.createdAt, date)
+  })
   
   return (
     <section>

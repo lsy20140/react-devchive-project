@@ -22,6 +22,8 @@ export default function NewMemo() {
       return;
     }
     setMemo((memo) => ({...memo, [name]: value}));  
+    let date = new Date();
+    setMemo((memo) => ({...memo, ['createdAt']: String(date)}))
   }
 
   const handleSubmit = (e) => {
@@ -63,14 +65,16 @@ export default function NewMemo() {
               name='title' 
               value={memo.title ?? ''}
               placeholder='메모 제목을 입력하세요.' 
-              onChange={handleChange}/><br/>  
+              onChange={handleChange}
+              required/><br/>  
 
             <label htmlFor='category'>카테고리</label><br/>  
-            <select name='category' onChange={handleChange}>
+            <select name='category' onChange={handleChange} required>
               <option value=''>카테고리를 선택해주세요</option>
-              <option value='react'>react</option>
-              <option value='javascript'>javascript</option>
-              <option value='html/css'>html/css</option>
+              <option value='React'>React</option>
+              <option value='JavaScript'>JavaScript</option>
+              <option value='HTML'>HTML</option>
+              <option value='CSS'>CSS</option>
             </select><br/>
 
             <label htmlFor='text'>내용</label><br/>  
@@ -79,7 +83,8 @@ export default function NewMemo() {
               value={memo.mainText ?? ''}
               cols='100' rows='10' 
               placeholder='mainText'
-              onChange={handleChange}></textarea><br/>  
+              onChange={handleChange}
+              required></textarea><br/>  
 
             <label htmlFor='refLink'>참고링크</label><br/>  
             <input 

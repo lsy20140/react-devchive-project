@@ -40,6 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-icons", "virtual:55dd7944c3779097876a68db18d32f63efc52956fb0cca3e5dadc4ee856cc1f12600b5c7b5d9141eaeaa25747e9c2204a764c24afcb9af465b136928fec54ba5#npm:4.7.1"],\
             ["react-router-dom", "virtual:55dd7944c3779097876a68db18d32f63efc52956fb0cca3e5dadc4ee856cc1f12600b5c7b5d9141eaeaa25747e9c2204a764c24afcb9af465b136928fec54ba5#npm:6.8.0"],\
             ["react-scripts", "virtual:55dd7944c3779097876a68db18d32f63efc52956fb0cca3e5dadc4ee856cc1f12600b5c7b5d9141eaeaa25747e9c2204a764c24afcb9af465b136928fec54ba5#npm:5.0.1"],\
+            ["timeago.js", "npm:4.0.2"],\
             ["uuid", "npm:9.0.0"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
@@ -16237,6 +16238,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-icons", "virtual:55dd7944c3779097876a68db18d32f63efc52956fb0cca3e5dadc4ee856cc1f12600b5c7b5d9141eaeaa25747e9c2204a764c24afcb9af465b136928fec54ba5#npm:4.7.1"],\
             ["react-router-dom", "virtual:55dd7944c3779097876a68db18d32f63efc52956fb0cca3e5dadc4ee856cc1f12600b5c7b5d9141eaeaa25747e9c2204a764c24afcb9af465b136928fec54ba5#npm:6.8.0"],\
             ["react-scripts", "virtual:55dd7944c3779097876a68db18d32f63efc52956fb0cca3e5dadc4ee856cc1f12600b5c7b5d9141eaeaa25747e9c2204a764c24afcb9af465b136928fec54ba5#npm:5.0.1"],\
+            ["timeago.js", "npm:4.0.2"],\
             ["uuid", "npm:9.0.0"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
@@ -18050,6 +18052,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/thunky-npm-1.1.0-2d25531f44-993096c472.zip/node_modules/thunky/",\
           "packageDependencies": [\
             ["thunky", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["timeago.js", [\
+        ["npm:4.0.2", {\
+          "packageLocation": "./.yarn/cache/timeago.js-npm-4.0.2-e87d64f9a3-c785a06988.zip/node_modules/timeago.js/",\
+          "packageDependencies": [\
+            ["timeago.js", "npm:4.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
