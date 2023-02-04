@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { addNewMemo } from '../../api/firebase';
-import Button from '../../components/ui/Button'
 import { useAuthContext } from '../../context/AuthContext';
 import CodeEditor from '@uiw/react-textarea-code-editor';
 import styles from '../../styles/newMemo.module.css'
@@ -58,7 +57,7 @@ export default function NewMemo() {
       <form onSubmit={handleSubmit}>
         <div className={styles.input_container}>
           <div className={styles.leftSide}>
-            <label htmlFor='title'>제목</label><br/>  
+            <label htmlFor='title'>제목<span> *</span></label><br/>  
             <input 
               type='text' 
               id='title' 
@@ -68,21 +67,21 @@ export default function NewMemo() {
               onChange={handleChange}
               required/><br/>  
 
-            <label htmlFor='category'>카테고리</label><br/>  
+            <label htmlFor='category'>카테고리<span> *</span></label><br/>  
             <select name='category' onChange={handleChange} required>
-              <option value=''>카테고리를 선택해주세요</option>
+              <option value=''>카테고리를  선택하세요 &nbsp;</option>
               <option value='React'>React</option>
               <option value='JavaScript'>JavaScript</option>
               <option value='HTML'>HTML</option>
               <option value='CSS'>CSS</option>
             </select><br/>
 
-            <label htmlFor='text'>내용</label><br/>  
+            <label htmlFor='text'>내용<span> *</span></label><br/>  
             <textarea
               name='mainText'
               value={memo.mainText ?? ''}
               cols='100' rows='10' 
-              placeholder='mainText'
+              placeholder='기억하고 싶은 내용을 기록해보세요!'
               onChange={handleChange}
               required></textarea><br/>  
 
@@ -94,12 +93,12 @@ export default function NewMemo() {
               id='refLink' 
               placeholder='참고했던 링크를 입력해주세요.'
               onChange={handleChange}/><br/> 
-              <button>저장하기</button>
+            <button className={styles.save_btn}>저장하기</button>
           </div>
           <div className={styles.rightSide}>
             <label htmlFor='code'>
               Code
-              <input type='button' onClick={handleEditorCount} value='코드 추가'/>
+              <input type='button' onClick={handleEditorCount} value='+ 코드 추가'/>
             </label><br/>  
             <div className={styles.codePack}>
               {editorCnt && editorCnt.map((item, i) => (        

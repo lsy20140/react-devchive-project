@@ -1,29 +1,78 @@
 .input_container {
+  width: 100%;
   display: flex;
   gap: 2rem;
 }
 
-.leftSide, .rightSide {
-  display: flex;
-  flex-direction: column;
+.leftSide{
+  width: 100%;
+}
+
+
+.leftSide label {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+.leftSide input {
+  width: 100%;
+}
+
+.save_btn{
+  margin-top: 2rem;
+  padding: 0.5rem 0;
+}
+
+.save_btn:hover{
+  filter: brightness(1.2);
+}
+
+.save_btn:active{
+  filter:brightness(0.9)
 }
 
 .rightSide {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  width: 100%;  
+  flex-direction: column;
+
 }
 
 .rightSide label {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.codePack{
-  height: 100vh;
-  overflow: auto;
+.rightSide label input {
+  cursor: pointer;
+  margin: 0;
+  padding: 0.5rem 0.8rem;
+  background-color: rgba(235,239,253,1);
+  color: var(--brand-base);
+  font-weight: 600;
+  outline: none;
+}
+
+.rightSide label input:hover{
+  background-color: rgba(216, 223, 251, 1);
+}
+
+.rightSide>label>input:active{
+  background-color: rgba(212, 218, 239, 1);
+}
+
+.codePack {
+  height:80%;
+  overflow: scroll;
 }
 
 .codeBox {
   height: fit-content;
   margin-bottom: 1.5rem;
+}
+
+label span {
+  color:brown;
 }
