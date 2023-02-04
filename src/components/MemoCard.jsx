@@ -10,7 +10,7 @@ export default function MemoCard({memo:{title, category, mainText, createdAt}}) 
       <div className={styles.category_box}>{category}</div>
       <p className={styles.title}>{title}</p>
       <p className={styles.main_text}>{mainText}</p>
-      <p>{formatAgo(createdAt, 'ko')}</p>
+      <p className={styles.time_ago}>{formatAgo(createdAt, 'ko')}</p>
     </div>
   )
 }
