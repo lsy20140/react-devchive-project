@@ -61,14 +61,13 @@ export async function getAllUsers() {
 
 export async function addNewMemo(userId, memo) {
   const id = uuid();
-  return set(ref(db, `memos/${userId}/${id}`), memo);
+  return set(ref(db, `memos/${userId}/${id}`), {...memo, id});
 }
 
 export async function getMemos(userId) {
   return get(ref(db, `memos/${userId}`))
   .then((snapshot) => {
     if(snapshot.exists()){
-      console.log(snapshot.val())
       return Object.values(snapshot.val());
     }
     return [];

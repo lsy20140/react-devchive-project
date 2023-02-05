@@ -1,0 +1,42 @@
+section {
+  background-color: white;
+}
+.detail_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+}
+
+.left_side {
+  width: 100%;
+}
+
+.main_text{
+  line-height: 1.6;
+}
+
+.right_side {
+  width: 100%;
+}
+
+.category_box {
+  width: fit-content;
+  background-color: rgba(235,239,253,255);
+  color: var(--brand-base);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.detail_container h2{
+  margin: 0.2rem 0 2rem 0;
+}
+
+.detail_container a {
+  display: flex;
+  align-items: center;
+  color: var(--second-text);
+}
