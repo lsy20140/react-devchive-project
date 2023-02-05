@@ -23,10 +23,13 @@ export function login() {
   signInWithPopup(auth, provider)
     .then((result) => {
       const user = result.user;
+      getAllUsers().then((res) => {
+        !res.includes(user.uid) && addUser(user.uid)}) 
       return user;
+
     }).catch((error) => {
       console.log(error);
-    });
+    })
 }
 
 export function logout() {
@@ -39,6 +42,20 @@ export function logout() {
 export function onUserStateChange(callback) {
   onAuthStateChanged(auth, async (user) => {
     callback(user);
+  })
+}
+
+export async function addUser(userId) {
+  return set(ref(db, `users/${userId}/uid`), userId);
+}
+
+export async function getAllUsers() {
+  return get(ref(db, 'users'))
+  .then((snapshot) => {
+    if(snapshot.exists()){
+      return Object.keys(snapshot.val());
+    }
+    return [];
   })
 }
 
