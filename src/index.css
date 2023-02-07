@@ -24,10 +24,17 @@ code {
 :root {
   --white: #fff;
   --brand-base: #4754CA;
+  --second-text: #625F68;
+  --third-text: rgb(168, 168, 168);
+  --code-container: 50%;
 }
 
 a {
   text-decoration: none;
+}
+
+h1, h2, h3, p {
+  margin: 0;
 }
 
 button{
@@ -37,18 +44,18 @@ button{
 
 .container {
   display: flex;
+  width: 100%;
 }
 
 section {
   width: 100%;
   padding: 3rem;
-  background-color: #fafafa;
 }
 
 input, select, textarea {
   box-sizing: border-box;
   border: none;
-  outline-style: none;
+  outline: 1px solid rgba(0, 0, 0, 0.18) ;
   padding: 0.8rem 0 0.8rem 0.5rem;
   margin-top: 0.5rem;
   border-radius: 0.5rem;
