@@ -1,12 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import {MdMenu, MdOutlineSpaceDashboard, MdOutlineErrorOutline, MdChecklist, MdOutlineLibraryMusic, MdOutlineLogin, MdOutlineLogout} from 'react-icons/md'
+import {MdOutlineSpaceDashboard, MdOutlineErrorOutline, MdChecklist, MdOutlineLibraryMusic, MdAddCircle} from 'react-icons/md'
 import {HiOutlinePencilAlt} from 'react-icons/hi'
-import { useAuthContext } from '../context/AuthContext';
 import styles from '../styles/sideBar.module.css'
 
 export default function SideBar() {
-  const {user, login, logout} = useAuthContext();
 
   return (
     <div className={styles.sidebar}>
@@ -15,14 +13,13 @@ export default function SideBar() {
           <img src='logo.png'/>
           <p>devchive</p>
         </Link>
-        <div className={styles.menu}><MdMenu/></div>
         
       </div>
       <p>Menu</p>
       <ul>
         <Link to='/'>
           <MdOutlineSpaceDashboard className={styles.icon}/>
-          <p>대시보드</p>
+          <p>홈</p>
         </Link>
 
         <Link to='/memos'>
@@ -35,36 +32,31 @@ export default function SideBar() {
         </Link>
         <Link to='/studylist'>
           <MdChecklist className={styles.icon}/>
-          <p>계획</p>
+          <p>StudyList</p>
         </Link>
         <Link to='/music'>
           <MdOutlineLibraryMusic className={styles.icon}/>
           <p>뮤직</p>
         </Link>
       </ul>
-      <p>Account</p>
-      <div>
-        {!user &&
-          <div className={styles.logout} onClick={login}>
-            <MdOutlineLogin/>
-            <p>로그인</p>
+      <p>Create</p>
+      <div className={styles.add_btns}>
+        <Link to ='/memos/new'>
+          <div>
+            <HiOutlinePencilAlt/>
+            <span>새 메모</span>
           </div>
-        }
-        {user && 
-          <div className={styles.profile}>
-            <img src={user.photoURL} className={styles.profileImg}/>
-            <p>{user.displayName}</p>
+          <MdAddCircle className={styles.add_icon}/>
+        </Link>
+        <hr/>
+        <Link to ='/memos/new'>
+          <div>
+            <MdOutlineErrorOutline/>
+            <span>새 오류</span>
           </div>
-        }
-        {user &&
-          <div className={styles.logout} onClick={logout}>
-            <MdOutlineLogout/>
-            <p>로그아웃</p>
-          </div>
-        }
-
+          <MdAddCircle className={styles.add_icon}/>
+        </Link>
       </div>
-
     </div>
   )
 }
