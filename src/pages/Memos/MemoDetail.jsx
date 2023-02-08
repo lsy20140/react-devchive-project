@@ -76,7 +76,7 @@ export default function MemoDetail() {
             <p>삭제한 메모는 복구 할 수 없습니다.</p>
           </main>
         }
-        id={id}
+        memoId={id}
       />
               
 
