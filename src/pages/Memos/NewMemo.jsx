@@ -3,6 +3,7 @@ import { addNewMemo } from '../../api/firebase';
 import { useAuthContext } from '../../context/AuthContext';
 import CodeEditor from '@uiw/react-textarea-code-editor';
 import styles from '../../styles/newMemo.module.css'
+import Button from '../../components/ui/Button'
 
 export default function NewMemo() {
 
@@ -18,6 +19,7 @@ export default function NewMemo() {
     if(name.includes('code')){
       setCodePack({...codePack, [name]: value});
       setMemo((memo) => ({...memo, ['codePack']: codePack}))
+
       return;
     }
     setMemo((memo) => ({...memo, [name]: value}));  
@@ -93,7 +95,7 @@ export default function NewMemo() {
               id='refLink' 
               placeholder='참고했던 링크를 입력해주세요.'
               onChange={handleChange}/><br/> 
-            <button className={styles.save_btn}>저장하기</button>
+            <Button text={'저장하기'}/>
           </div>
           <div className={styles.rightSide}>
             <label htmlFor='code'>
@@ -114,7 +116,6 @@ export default function NewMemo() {
                   style={{
                     fontSize: 12,
                     backgroundColor: "#000",
-                    fontFamily: 'ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace',
                   }}
                 />
               ))}

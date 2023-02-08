@@ -3,12 +3,13 @@
   justify-content: space-between;
   width: 100%;
   gap: 2rem;
+  height: 200%;;
 }
 
 .top_content {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items:flex-end;
   margin-bottom: 2rem;
 }
 
@@ -31,6 +32,7 @@
   background-color: white;
   border: 1px solid var(--brand-base);
   color: var(--brand-base);
+
 }
 
 .del_btn {
@@ -39,8 +41,7 @@
 }
 
 .left_side {
-  width: 100%;
-  padding-right: var(--code-container);
+  width: 50%;
 }
 
 .main_text{
@@ -49,11 +50,12 @@
 }
 
 .code_container {
-  top: 6rem;
+  position: sticky;
+  width: 50%;
+  top: 3rem;
   right: 0;
   height: 100vh;
   left: 58%;
-  position: fixed;
   overflow: auto;
 }
 
