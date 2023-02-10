@@ -15,6 +15,7 @@ import Mypage from './pages/Mypage';
 import NewMemo from './pages/Memos/NewMemo';
 import NewError from './pages/ErrorArchive/NewError';
 import MusicList from './pages/MusicList';
+import EditMemo from './pages/Memos/EditMemo';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
       {path: '/memos', element: <Memos/>},
       {path: '/memos/new', element: <NewMemo/>},
       {path: '/memos/:id', element: <MemoDetail/>},
+      {path: '/memos/edit/:id', element: <EditMemo/>},
       {path: '/errorarchive', element: <ErrorArchive/>},
       {path: '/errorarchive/new', element: <NewError/>},
       {path: '/errorarchive/:id', element: <ErrorDetail/>},

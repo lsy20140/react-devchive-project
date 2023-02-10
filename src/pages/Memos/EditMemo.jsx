@@ -1,6 +1,4 @@
-import React, { useState } from 'react'
-import { addNewMemo } from '../../api/firebase';
-import { useAuthContext } from '../../context/AuthContext';
+import React, { useEffect, useState } from 'react'
 import CodeEditor from '@uiw/react-textarea-code-editor';
 import styles from '../../styles/newMemo.module.css'
 import Button from '../../components/ui/Button'
@@ -12,8 +10,8 @@ export default function EditMemo() {
   const {state:{memo}} = useLocation();
   const { editMemo } = useMemos();
   const [updateMemo, setUpdateMemo] = useState({...memo});
-  const [editorCnt, setEditorCnt] = useState([Object.values(updateMemo.codePack).length]);
-  const [codePack, setCodePack] = useState({...memo})
+  const [editorCnt, setEditorCnt] = useState([(Object.keys(updateMemo.codePack)).length]);
+  const [codePack, setCodePack] = useState({...memo.codePack})
 
   const handleChange = (e) => {
     const {name, value} = e.target;
@@ -21,13 +19,14 @@ export default function EditMemo() {
     if(name.includes('code')){
       setCodePack({...updateMemo.codePack, [name]: value});
       setUpdateMemo((updateMemo) => ({...updateMemo, ['codePack']: codePack}))
-      
+      console.log('codePack', codePack)
       return;
     }
 
+
     setUpdateMemo({...updateMemo, [name]:value})
     console.log([name], value)
-    console.log(memo )
+    console.log(memo)
   }
 
   const handleSubmit = (e) => {
@@ -42,8 +41,33 @@ export default function EditMemo() {
     counter += 1
     countArr.push(counter)
     setEditorCnt(countArr);
-    
+    console.log('countArr',countArr)
   }
+
+  const addEditor = (editorCnt) => {
+    let arr = []
+    for(let i = 0 ; i< editorCnt.length-1 ; i++){
+      arr.push(
+        <CodeEditor
+          className={styles.codeBox}
+          key={i+editorCnt[0]}
+          name={`code${i+editorCnt[0]}`}
+          value={codePack[Object.keys(codePack)[i+editorCnt[0]]]?? ''}
+          language="js"
+          placeholder="코드를 입력하세요"
+          onChange={handleChange}
+          padding={50}
+          style={{
+            fontSize: 12,
+            backgroundColor: "#000",
+          }}
+        />
+      )
+    }
+
+    return arr;
+  }
+
 
   return (
     <section>
@@ -95,12 +119,12 @@ export default function EditMemo() {
               <input type='button' value='+ 코드 추가' onClick={handleEditorCount}/>
             </label><br/>  
             <div className={styles.codePack}>
-              { Object.keys(updateMemo.codePack).map((item, i) => (        
+              { Object.keys(memo.codePack).map((item, i) => (        
                   <CodeEditor
                     className={styles.codeBox}
                     key={i}
                     name={`code${i}`}
-                    value={(updateMemo.codePack)[Object.keys(updateMemo.codePack)[i]] ?? ''}
+                    value={codePack[Object.keys(codePack)[i]] ?? ''}
                     language="js"
                     placeholder="코드를 입력하세요"
                     onChange={handleChange}
@@ -112,22 +136,7 @@ export default function EditMemo() {
                   />
                 ))
               }
-              {(editorCnt.map(x=> x-editorCnt[0])).map((item, i) => (
-                  <CodeEditor
-                  className={styles.codeBox}
-                  key={i+editorCnt[0]}
-                  name={`code${i+editorCnt[0]}`}
-                  value={''}
-                  language="js"
-                  placeholder="코드를 입력하세요"
-                  onChange={handleChange}
-                  padding={50}
-                  style={{
-                    fontSize: 12,
-                    backgroundColor: "#000",
-                  }}
-                />
-              ))}
+              {addEditor(editorCnt)}
 
 
 

@@ -74,6 +74,10 @@ export async function getMemos(userId) {
   })
 }
 
+export async function editMemoContents(userId, memo) {
+  return set(ref(db,`memos/${userId}/${memo.id}`), memo)
+}
+
 export async function removeMemo(userId, memoId) {
   return remove(ref(db, `memos/${userId}/${memoId}`))
 }
