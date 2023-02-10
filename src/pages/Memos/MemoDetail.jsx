@@ -7,10 +7,13 @@ import moment from 'moment';
 import 'moment/locale/ko'
 import {MdOutlineEdit, MdOutlineDelete} from 'react-icons/md'
 import { Modal } from '../../components/ui/Modal';
+import {useNavigate} from 'react-router-dom'
 
 export default function MemoDetail() {
-  const {state:{memo:{id, title, category, mainText, refLink, codePack, createdAt}}} = useLocation();
+  const {state:{memo, memo:{id, title, category, mainText, refLink, codePack, createdAt}}} = useLocation();
   let date = moment(createdAt).format('YYYY년 MM월 DD일 HH:mm:ss')
+
+  const navigate = useNavigate();
   
   const [toggleModal, setToggleModal] = useState(false);
 
@@ -35,7 +38,7 @@ export default function MemoDetail() {
             <p className={styles.date_text}>📆 {date}</p>
           </div>
           <div className={styles.edit_del_btns}>
-            <button className={styles.edit_btn}><MdOutlineEdit/><span>수정</span></button>
+            <button className={styles.edit_btn} onClick={() => navigate(`/memos/edit/${id}`, {state: {memo}})}><MdOutlineEdit/><span>수정</span></button>
             <button className={styles.del_btn} onClick={openModal}><MdOutlineDelete/><span>삭제</span></button>
           </div>
 
