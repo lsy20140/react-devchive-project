@@ -30,9 +30,9 @@ export default function SideBar() {
           <MdOutlineErrorOutline className={styles.icon}/>
           <p>오류 모음</p>
         </Link>
-        <Link to='/studylist'>
+        <Link to='/mywork'>
           <MdChecklist className={styles.icon}/>
-          <p>StudyList</p>
+          <p>할 일</p>
         </Link>
         <Link to='/music'>
           <MdOutlineLibraryMusic className={styles.icon}/>

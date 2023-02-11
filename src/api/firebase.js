@@ -81,3 +81,19 @@ export async function editMemoContents(userId, memo) {
 export async function removeMemo(userId, memoId) {
   return remove(ref(db, `memos/${userId}/${memoId}`))
 }
+
+
+export async function addNewTask(userId, task) {
+  const id = uuid();
+  return set(ref(db, `tasks/${userId}/${id}`), {...task, id});
+}
+
+export async function getTasks(userId) {
+  return get(ref(db, `tasks/${userId}`))
+  .then((snapshot) => {
+    if(snapshot.exists()){
+      return Object.values(snapshot.val());
+    }
+    return [];
+  })
+}

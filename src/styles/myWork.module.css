@@ -1,0 +1,17 @@
+.top_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top_box button {
+  width: fit-content;
+  margin: 0;
+}
+
+.todo_container{
+  display: flex;
+  gap: 2rem;
+}
+
+

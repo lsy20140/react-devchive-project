@@ -10,12 +10,12 @@ import Memos from './pages/Memos/Memos';
 import MemoDetail from './pages/Memos/MemoDetail';
 import ErrorArchive from './pages/ErrorArchive/ErrorArchive';
 import ErrorDetail from './pages/ErrorArchive/ErrorDetail';
-import StudyChecklist from './pages/StudyChecklist';
 import Mypage from './pages/Mypage';
 import NewMemo from './pages/Memos/NewMemo';
 import NewError from './pages/ErrorArchive/NewError';
 import MusicList from './pages/MusicList';
 import EditMemo from './pages/Memos/EditMemo';
+import MyWork from './pages/MyWork';
 
 const router = createBrowserRouter([
   {
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       {path: '/errorarchive', element: <ErrorArchive/>},
       {path: '/errorarchive/new', element: <NewError/>},
       {path: '/errorarchive/:id', element: <ErrorDetail/>},
-      {path: '/studylist', element: <StudyChecklist/>},
+      {path: '/mywork', element: <MyWork/>},
       {path: '/music', element: <MusicList/>},
       {path: '/mypage', element: <Mypage/>},
     ]
