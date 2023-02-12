@@ -97,3 +97,7 @@ export async function getTasks(userId) {
     return [];
   })
 }
+
+export async function updateTask(userId, task) {
+  return set(ref(db, `tasks/${userId}/${task.id}`), task)
+}

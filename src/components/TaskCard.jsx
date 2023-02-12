@@ -5,8 +5,8 @@ import TaskItem from './TaskItem'
 export default function TaskCard({id, status, tasks}) {
   return (
     <div className={styles.task_card}>
-      <h3>{status}</h3>
-      <ul>
+      <p>{status}</p>
+      <ul className={styles.task_items}>
         {tasks.map((task) => (
           <TaskItem
             key={task.id}

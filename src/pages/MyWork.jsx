@@ -21,18 +21,13 @@ export default function MyWork() {
   };
 
   const {data: tasks} = useQuery(['tasks', uid || ''], () => getTasks(uid), {
-    enabled: !!uid
+    enabled: !!uid,
+    staleTime: 2000,
   })
 
   const activeTasks = tasks && tasks.filter(task => task.status === 'active');
   const doneTasks = tasks && tasks.filter(task => task.status === 'done')
 
-
-
-
-  useEffect(() => {
-    console.log('tasks',tasks)
-  })
 
   const hasTasks = tasks && tasks.length >0
 
@@ -53,19 +48,13 @@ export default function MyWork() {
       <ul className={styles.todo_container}>
         {tasks && 
           <TaskCard
-            status='all'
-            tasks={tasks}     
-          />
-        }
-        {tasks && 
-          <TaskCard
-            status='active'
+            status='진행 중 🔥'
             tasks={activeTasks}     
           />
         }
         {tasks && 
           <TaskCard
-            status='done'
+            status='완료 😀'
             tasks={doneTasks}     
           />
         }
