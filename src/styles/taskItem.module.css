@@ -1,0 +1,36 @@
+.task_item {
+  display: flex;
+  padding: 1.5rem 0;
+  border-bottom: 1.5px solid rgba(219, 219, 219, 0.269);
+  align-items: flex-start;
+  gap: 0.3rem;
+}
+
+.task_item input{
+  flex: 1;
+  outline: none;
+  scale: 1.2;
+}
+
+
+.task_content{
+  display: flex;
+  flex-direction: column;
+  flex: 15;
+  gap: 1rem;
+}
+
+.task_name{
+  font-weight: 600;
+}
+
+.task_info{
+  font-size: 0.9rem;
+  color: var(--second-text);
+}
+
+.created_at {
+  font-size: 0.8rem;
+  color: var(--third-text);
+  font-weight: 300;
+}

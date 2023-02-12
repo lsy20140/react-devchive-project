@@ -35,6 +35,11 @@ a {
   color: var(--second-text);
 }
 
+ul{
+  padding: 0;
+  list-style: none;
+}
+
 h1, h2, h3, p {
   margin: 0;
 }
@@ -44,23 +49,37 @@ button{
   font-family: 'Noto Sans KR';
 }
 
+button:hover{
+  filter: brightness(0.9);
+}
+
 .container {
   display: flex;
   width: 100%;
+}
+
+.page_container{
+  width: 100%;
+  background-color: #fafafa;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 2rem 3rem;
 }
 
 .content{
   position: absolute;
   top: 0;
   right: 0;
-  width: calc(100% - var(--sidebar-width) - 3rem);
+  width: calc(100% - var(--sidebar-width) - 4rem);
 }
 section {
   width: 100%;
-  padding: 3rem;
+  padding: 2rem 3rem;
+  box-sizing: border-box;
 }
 
 input, select, textarea {
+  width: 100%;
   box-sizing: border-box;
   border: none;
   outline: 1px solid rgba(0, 0, 0, 0.18) ;
