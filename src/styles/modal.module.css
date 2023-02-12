@@ -1,22 +1,22 @@
 .modal_bg{
   position: absolute;
-  height: 120%;
+  height: 100vh;
   top: 0;
-  right: 0;
+  left: -14rem;
   bottom: 0;
-  left: 0;
+  right: 0;
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
+  z-index: 999;
 }
 .modal_container {
   position: fixed;
-  top: 30%;
+  top: 25%;
   width: 25%;
   height: 20%;
 }
 .modal_container > section {
-  width: 90%;
   padding: 0;
   background-color: white;
   border-radius: 0.5rem;
@@ -34,8 +34,8 @@
 
 .modal_container footer {
   display: flex;
-  margin-left: 60%;
   gap: 0.5rem;
+  flex-shrink: 0;
 }
 
 .close_btn {
@@ -45,6 +45,7 @@
 
 .del_btn {
   background-color: #df2b1e ;
+
 }
 
 

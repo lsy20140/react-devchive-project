@@ -21,11 +21,11 @@ export default function Memos() {
   })
   
   return (
-    <div className={styles.memo_container}>
+    <div className='page_container'>
       <h3 >나의 메모</h3>
       {!hasMemos && <p>메모가 없습니다.</p>}
       {hasMemos && 
-      <ul>
+      <ul className={styles.memos}>
         {memos && memos.map((memo) => (
           <MemoCard key={memo.id} memo={memo}/>
         ))}

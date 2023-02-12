@@ -2,9 +2,6 @@ import React from 'react'
 import styles from '../styles/memoCard.module.css'
 import { formatAgo } from '../util/date'
 import {useNavigate} from 'react-router-dom'
-import { useAuthContext } from '../context/AuthContext';
-
-
 
 export default function MemoCard({memo, memo:{id, title, category, mainText, createdAt}}) {
   const date = new Date();
