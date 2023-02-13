@@ -1,0 +1,4 @@
+.monthly_tasks_box{
+  display: flex;
+  gap: 1rem;
+}

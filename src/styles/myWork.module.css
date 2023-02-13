@@ -4,14 +4,64 @@
   align-items: center;
 }
 
-.top_box button {
+.top_box > button {
   width: fit-content;
   margin: 0;
+  background-image: linear-gradient(to right, #4754CA 0%, #162397  51%, #4754CA  100%);
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 0.5rem;
 }
+
+
+.top_box > button:hover {
+  background-position: right center;
+}
+
 
 .todo_container{
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
+.stats_container{
+  display: flex;
+  gap: 1.5rem;
+}
 
+.montly_tasks_box{
+  flex: 2;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 3px 0px;  
+  border-radius: 0.5rem;
+  padding: 1.5rem; 
+}
+
+.total_stats{
+  flex: 1;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 3px 0px;  
+  border-radius: 0.5rem;
+  padding: 1.5rem; 
+}
+
+.montly_tasks_box > p, .total_stats > p{
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+
+}
+
+.total_stats_content{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.check_img{
+  width: 8rem;
+  height: 8rem;
+}
