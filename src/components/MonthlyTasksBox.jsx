@@ -32,7 +32,7 @@ export default function MonthlyTasksBox({tasks}) {
     <div className={styles.monthly_tasks_box}>
       {
         monthlyCnt && monthlyCnt.map((cnt, i) => (
-          <OneMonthBox key={i} cnt={cnt}/>
+          <OneMonthBox key={i} cnt={cnt} month={i}/>
         ))
       }
     </div>

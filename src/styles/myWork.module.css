@@ -23,6 +23,7 @@
 .todo_container{
   display: flex;
   gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .stats_container{
@@ -47,21 +48,25 @@
 }
 
 .montly_tasks_box > p, .total_stats > p{
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.1rem;
   margin-bottom: 1.5rem;
-
 }
+
+.total_stats > p {
+  margin-bottom: 0.5rem;
+}
+
 
 .total_stats_content{
   display: flex;
   justify-content:space-around;
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 600;
 }
 
 .check_img{
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
 }

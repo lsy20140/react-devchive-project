@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styles from '../styles/oneMonthBox.module.css'
 
-export default function OneMonthBox({cnt}) {
+export default function OneMonthBox({month, cnt}) {
   
   // 월별로 등록한 tasks 수 각각 구해서
   // 색 5개로 나눠놓기(1(투명),2,3,4)
@@ -11,8 +11,12 @@ export default function OneMonthBox({cnt}) {
   // 7개~9개 -> 4번 색
 
   return (
-    <div className={styles.one_month_box} style={{ opacity: `${cnt*10}%`}}>
-      {cnt}
+    <div className={styles.one_month}>
+      <div className={styles.one_month_box} style={{ backgroundColor: `rgba(71, 84, 202, ${cnt/10})`}}>
+        {cnt}
+      </div>
+      <p>{month === 0 ? '이번 달' :month+ '개월 전'}</p>
     </div>
+
   )
 }
