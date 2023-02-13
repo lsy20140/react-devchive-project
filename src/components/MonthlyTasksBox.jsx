@@ -17,21 +17,21 @@ export default function MonthlyTasksBox({tasks}) {
     months -= d1.getMonth();
     months += d2.getMonth();
     return months <= 0 ? 0 : months;
-}
+  }
 
-useEffect(() => {
-  arrayLen.map((item, i) => {
-    const filteredTasks = tasks && tasks.filter((task) => getMonthDiff(task.createdAt) === i)
-    monthlyCnt[i] = filteredTasks && filteredTasks.length;
-    setMonthlyCnt([...monthlyCnt])
-  })
-},[])
+  useEffect(() => {
+    arrayLen.map((item, i) => {
+      const filteredTasks = tasks && tasks.filter((task) => getMonthDiff(task.createdAt) === i)
+      monthlyCnt[i] = filteredTasks && filteredTasks.length;
+      setMonthlyCnt([...monthlyCnt])
+    })
+  },[tasks])
 
 
   return (
     <div className={styles.monthly_tasks_box}>
       {
-        monthlyCnt.map((cnt, i) => (
+        monthlyCnt && monthlyCnt.map((cnt, i) => (
           <OneMonthBox key={i} cnt={cnt}/>
         ))
       }
