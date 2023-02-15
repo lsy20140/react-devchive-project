@@ -1,0 +1,862 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "DQVNZoFdEntJlcWSlsNFJGM6ttA",
+  "nextPageToken": "CBkQAA",
+  "regionCode": "KR",
+  "pageInfo": {
+      "totalResults": 840098,
+      "resultsPerPage": 25
+  },
+  "items": [
+      {
+          "kind": "youtube#searchResult",
+          "etag": "eUdgSUjOa9IrHB_9OfmGAN00uEY",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "cbuZfY2S2UQ"
+          },
+          "snippet": {
+              "publishedAt": "2020-07-28T11:19:02Z",
+              "channelId": "UClrzPAgzrAzdWbllvP4Oabg",
+              "title": "[ 𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕 ]  코딩할때 듣기 좋은 노래 • lofi type beat • 3 hours",
+              "description": "3시간짜리 반복 재생입니다 광고는 제가 설정 한 것이 아니라 음원 저작권 때문에 자동 생성되는 광고입니다 모든 수익은 음원 ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/cbuZfY2S2UQ/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/cbuZfY2S2UQ/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/cbuZfY2S2UQ/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "yanu_",
+              "liveBroadcastContent": "none",
+              "publishTime": "2020-07-28T11:19:02Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "FP_KUWEMBCmYsqPFsFbRoBiUlA4",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "Xc1Le3CSdrM"
+          },
+          "snippet": {
+              "publishedAt": "2021-01-21T10:00:13Z",
+              "channelId": "UCkwegMjATseS7obo5GW_YsQ",
+              "title": "[ 𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕 ] 코딩할때 듣기 좋은 노래 | 3 hour playlist | Lofi hip hop mix ~ jazzhop ~ relax beats",
+              "description": "Listen to this: 코딩할때 듣기 좋은 노래 : https://www.youtube.com/playlist?list=PLbf4lTYGCm5smdrMyQl5RdGnY3HV0GtSN ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/Xc1Le3CSdrM/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/Xc1Le3CSdrM/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/Xc1Le3CSdrM/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Lofi 코딩",
+              "liveBroadcastContent": "none",
+              "publishTime": "2021-01-21T10:00:13Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "dOHCOyfvd1eLgIq69AIZMeUsT2Q",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "4LIt_ICJyjk"
+          },
+          "snippet": {
+              "publishedAt": "2021-02-25T10:00:19Z",
+              "channelId": "UCkwegMjATseS7obo5GW_YsQ",
+              "title": "[ 𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕 ] 코딩 / 과제 할 때 집중 해서 듣기 좋은 음악 • Relaxing lofi beats to study music • Lofi Coding Beats",
+              "description": "Listen to this: 코딩할때 듣기 좋은 노래 : https://www.youtube.com/playlist?list=PLbf4lTYGCm5smdrMyQl5RdGnY3HV0GtSN ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/4LIt_ICJyjk/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/4LIt_ICJyjk/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/4LIt_ICJyjk/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Lofi 코딩",
+              "liveBroadcastContent": "none",
+              "publishTime": "2021-02-25T10:00:19Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "rXPIGSeI4SAHyrEjLoN2wDdiGX8",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "qMwzWk81tVM"
+          },
+          "snippet": {
+              "publishedAt": "2021-03-16T11:00:15Z",
+              "channelId": "UC0Y0T9JpgIBbyGDjvy9PbOg",
+              "title": "[inflaylist] 공부/작업 할 때 집중해서 듣기 좋은 음악✍ | 4 hour playlist | lofi, piano | 직장인 | 대학생 | 프리랜서 | 취준생",
+              "description": "인프런 바로가기 : https://bit.ly/3cQLIgP 이번엔 4시간..! 열심히 공부하고 일하는 학생, 취준생, 직장인, 프리랜서 모두! 오늘도 화이팅 ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/qMwzWk81tVM/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/qMwzWk81tVM/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/qMwzWk81tVM/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "인프런 inflearn",
+              "liveBroadcastContent": "none",
+              "publishTime": "2021-03-16T11:00:15Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "lZZ4gk8lKDY5gqVcA1vgsA3QpcU",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "1yylwX-tTh4"
+          },
+          "snippet": {
+              "publishedAt": "2022-05-15T22:00:00Z",
+              "channelId": "UC4Oqg2xJLbOkGnTpn68pErA",
+              "title": "코딩할때 듣는 좋은 Lofi Jazz 믹스테잎  • 과제할때 • 공부할때 • 3 hours",
+              "description": "Into the moment'✨ 이번에는 '코딩하는' 순간을 담아봤어요. 영상은 비정기적으로 업로드하고 있습니다. 이용료는 구독 ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/1yylwX-tTh4/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/1yylwX-tTh4/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/1yylwX-tTh4/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "yellow mixtape",
+              "liveBroadcastContent": "none",
+              "publishTime": "2022-05-15T22:00:00Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "y5gUxKlZg5htQqMO2lUEM9sT0pY",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "CfPxlb8-ZQ0"
+          },
+          "snippet": {
+              "publishedAt": "2020-08-08T16:36:44Z",
+              "channelId": "UCQtJT-hZA3FDTDHnQt9Qqsg",
+              "title": "Work &amp; Study Lofi Jazz - Relaxing Smooth Background Jazz Music for Work, Study, Focus, Coding",
+              "description": "Feel free to listen, share, and stream on your favorite places! Please subscribe to our channel and enjoy the latest release: ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/CfPxlb8-ZQ0/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/CfPxlb8-ZQ0/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/CfPxlb8-ZQ0/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Musictag",
+              "liveBroadcastContent": "none",
+              "publishTime": "2020-08-08T16:36:44Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "mqDpflInq8wAhnSefcQ7z95ovWM",
+          "id": {
+              "kind": "youtube#playlist",
+              "playlistId": "PLXcWfWJ12rm8HpwIJOWHUGDaKTpL7fhik"
+          },
+          "snippet": {
+              "publishedAt": "2023-02-12T06:35:08Z",
+              "channelId": "UCt4CytyK7dDtjmGHdEL8MPw",
+              "title": "작업할 때 듣기 좋은 노래",
+              "description": "어떤 일을 할 때 듣기만 해도 기분이 좋아지는 노래 모음.",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/1I0WIs5rQjs/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/1I0WIs5rQjs/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/1I0WIs5rQjs/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "selsoo설수",
+              "liveBroadcastContent": "none",
+              "publishTime": "2023-02-12T06:35:08Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "sZMrxC8fYhGPhvcArUeTBMm_cRc",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "nxKfi-6EtmY"
+          },
+          "snippet": {
+              "publishedAt": "2020-05-27T06:05:01Z",
+              "channelId": "UCvfbdZtQxV-q006muhXkfMQ",
+              "title": "코딩할 때 듣기 좋은 로파이 재즈 힙합  (playlist)/𝕝𝕠𝕗𝕚 𝕛𝕒𝕫𝕫 𝕙𝕚𝕡𝕙𝕠𝕡 𝟙𝕙𝕣",
+              "description": "Subscribe and Support them!! Nawhij: https://soundcloud.com/nawhij hentaidesu: https://soundcloud.com/hentaidesuka prima: ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/nxKfi-6EtmY/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/nxKfi-6EtmY/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/nxKfi-6EtmY/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Mood Rainbow",
+              "liveBroadcastContent": "none",
+              "publishTime": "2020-05-27T06:05:01Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "Wwy7mCRkxp5VoOM0--poz4te95s",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "HfaIcB4Ogxk"
+          },
+          "snippet": {
+              "publishedAt": "2022-10-17T23:16:26Z",
+              "channelId": "UCHCyX77xqN9OVjLzMpAZvXw",
+              "title": "[Playlist] 일하면서 틀어 놓기 좋은 잔잔한 8시간 재즈 플레이리스트 | Jazz 노래모음 카페 공부 독서 재택 코딩",
+              "description": "jazz #playlist #trio712 안녕하세요, 듣기 편안한 음악을 연주하는 [Trio712]입니다. 모든 음악은 [Trio712]가 직접 연주합니다.",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/HfaIcB4Ogxk/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/HfaIcB4Ogxk/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/HfaIcB4Ogxk/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "WRG 우리가 듣고 싶어서 연주한 playlist",
+              "liveBroadcastContent": "none",
+              "publishTime": "2022-10-17T23:16:26Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "gRXrgetRt_ROeS5rUj4aKNB8WIg",
+          "id": {
+              "kind": "youtube#playlist",
+              "playlistId": "PLQmdhDtiEM4ZD0l8qbOOFNvo3wUwx14w5"
+          },
+          "snippet": {
+              "publishedAt": "2023-02-11T17:17:00Z",
+              "channelId": "UCpu7YyKrbN-ex8eCHrqe2Yw",
+              "title": "lofi song",
+              "description": "",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/n61ULEU7CO0/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/n61ULEU7CO0/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/n61ULEU7CO0/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "nnoo patcha",
+              "liveBroadcastContent": "none",
+              "publishTime": "2023-02-11T17:17:00Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "j4NHwKO9uj5XYHD6N0xYvQ9BMdk",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "nhAR2-WIM-I"
+          },
+          "snippet": {
+              "publishedAt": "2021-01-10T11:35:33Z",
+              "channelId": "UCkwegMjATseS7obo5GW_YsQ",
+              "title": "[ 𝑷𝒍𝒂𝒚𝒍𝒊𝒔𝒕 ] 코딩할때 듣기 좋은 노래 • 3 hours playlist • lofi type beat • beats to relax • study music",
+              "description": "Listen to this: 코딩할때 듣기 좋은 노래 : https://www.youtube.com/playlist?list=PLbf4lTYGCm5smdrMyQl5RdGnY3HV0GtSN ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/nhAR2-WIM-I/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/nhAR2-WIM-I/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/nhAR2-WIM-I/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Lofi 코딩",
+              "liveBroadcastContent": "none",
+              "publishTime": "2021-01-10T11:35:33Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "XkdmwIsq8F7zxaOaAOCMolRDZvg",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "Jm5v-dZnYCs"
+          },
+          "snippet": {
+              "publishedAt": "2021-11-04T11:30:05Z",
+              "channelId": "UCUpJs89fSBXNolQGOYKn0YQ",
+              "title": "코딩할때 듣기 좋은 Lofi Mix 🎵 한강뷰 • 3-Hour Code With Me 🍁 Seoul",
+              "description": "배경에 잔잔바리 불 타는 장작 소리를 깔아서. 포근함을 더했습니다. (?) 서서히 해가 지는. 어느 가을의 서울 한강뷰도 감상해보세요 ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/Jm5v-dZnYCs/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/Jm5v-dZnYCs/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/Jm5v-dZnYCs/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "노마드 코더 Nomad Coders",
+              "liveBroadcastContent": "none",
+              "publishTime": "2021-11-04T11:30:05Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "RyEQX5tadEwXpIVvtcXojTLpm9c",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "p6xqKJqsQWs"
+          },
+          "snippet": {
+              "publishedAt": "2022-03-04T11:00:11Z",
+              "channelId": "UCkwegMjATseS7obo5GW_YsQ",
+              "title": "매일 컴퓨터에 집중할 수 있도록 도와주는 음악 | 3 hour lofi hiphop mix / lofi coding/ study / work",
+              "description": "If you like the video, please give me a thumbs up and don't forget to subscribe to my channel : https://www.youtube.com/c/Lofi코딩 ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/p6xqKJqsQWs/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/p6xqKJqsQWs/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/p6xqKJqsQWs/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Lofi 코딩",
+              "liveBroadcastContent": "none",
+              "publishTime": "2022-03-04T11:00:11Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "px7CCFOAI2iO58-Ccy3vX2ZpRo8",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "hGrIgIfCxP0"
+          },
+          "snippet": {
+              "publishedAt": "2022-12-09T11:00:07Z",
+              "channelId": "UCkwegMjATseS7obo5GW_YsQ",
+              "title": "도서관에서 공부할 때 최대 집중력이 필요하다 | 3 hour lofi hip hop mix / lofi music for studying , work",
+              "description": "도서관에서 공부할 때 최대 집중력이 필요하다 | 3 hour lofi hip hop mix / lofi music for studying , work If you like the video, please ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/hGrIgIfCxP0/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/hGrIgIfCxP0/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/hGrIgIfCxP0/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Lofi 코딩",
+              "liveBroadcastContent": "none",
+              "publishTime": "2022-12-09T11:00:07Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "MrGa5-7hMPI39NqVXPgUEKfnkvQ",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "wnudr9qjrbA"
+          },
+          "snippet": {
+              "publishedAt": "2020-06-17T19:54:27Z",
+              "channelId": "UC4vC5Fq_SjPFNjBYfWE1TZQ",
+              "title": "[지브리 스튜디오] 공부할때, 일할때 듣기좋은 음악 모음 12시간(검은화면) (12hours)(피아노)(Relaxing Piano Studio Ghibli Collection)",
+              "description": "더보기를 누르시면 타임라인이 보입니다. 검은화면, 12시간 버전입니다. 노트북 또는 모바일 기기 사용시 전체화면으로 해놓으시면 ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/wnudr9qjrbA/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/wnudr9qjrbA/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/wnudr9qjrbA/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "#include 〈music.h〉",
+              "liveBroadcastContent": "none",
+              "publishTime": "2020-06-17T19:54:27Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "-aYD9Pk3PHl2bAXbwnURZt31XR4",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "IO5u1m0TsJw"
+          },
+          "snippet": {
+              "publishedAt": "2021-09-28T13:07:28Z",
+              "channelId": "UCaA7hpA2MEPKLY6wqG_xbng",
+              "title": "[ 𝐩𝐥𝐚𝐲𝐥𝐢𝐬𝐭 ] 공부할 때 듣는 적당히 신나는 팝송",
+              "description": "약 2836번째 업로드 시도 ,,, +) 와 드디어 성공! 구독자 1000명 되던 날 하고 싶은 말이 참 많았는데 미친 유튜브와 미친 아이패드 ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/IO5u1m0TsJw/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/IO5u1m0TsJw/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/IO5u1m0TsJw/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "쌍떡잎식물",
+              "liveBroadcastContent": "none",
+              "publishTime": "2021-09-28T13:07:28Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "UWumTpQqKwidu6mvoDpcjbMECLY",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "0xJxgvJO2Xo"
+          },
+          "snippet": {
+              "publishedAt": "2020-07-16T05:57:19Z",
+              "channelId": "UC0Y0T9JpgIBbyGDjvy9PbOg",
+              "title": "코딩 / 과제 할 때 집중 해서 듣기 좋은 음악🌃 | 3 hour playlist | beats to coding to | lofi, jazz, hiphop |",
+              "description": "인프런 바로가기 : https://bit.ly/3hAe5TX 오늘도 코딩하는 우리 모두 화이팅...!!! -인프런- ━━━━━━━━━━ 우리는 성장 기회의 ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/0xJxgvJO2Xo/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/0xJxgvJO2Xo/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/0xJxgvJO2Xo/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "인프런 inflearn",
+              "liveBroadcastContent": "none",
+              "publishTime": "2020-07-16T05:57:19Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "Z4iTy-nS9Xasc3yqCEoJUhGRuNg",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "TbAZ9umswnc"
+          },
+          "snippet": {
+              "publishedAt": "2022-01-17T08:25:14Z",
+              "channelId": "UCSPrC9GpKncetZ9T8_KJBcw",
+              "title": "PLAYLIST│골똘히 집중할 때 듣기좋은 노래모음│공부 작업 야근 차분한 조용한 노래",
+              "description": "잔잔한 #studywithme #야근 #노래모음.",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/TbAZ9umswnc/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/TbAZ9umswnc/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/TbAZ9umswnc/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "라디오국 김피디[RADIO Prod.K]",
+              "liveBroadcastContent": "none",
+              "publishTime": "2022-01-17T08:25:14Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "y_dI7wG_o9o344yhUazri-amKRs",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "3amRT182LwU"
+          },
+          "snippet": {
+              "publishedAt": "2022-01-24T14:11:12Z",
+              "channelId": "UCaA7hpA2MEPKLY6wqG_xbng",
+              "title": "[ 𝐩𝐥𝐚𝐲𝐥𝐢𝐬𝐭 ] 공부할 때 듣는 적당히 리듬타기 좋은 팝송",
+              "description": "안녕하세요 2022년 “아 스파이더맨 봐야하는데,,” 말하기 부문 최우수상을 수여한 식물입니다 생각을 좀 해봤습니다 K-고3으로서 시간 ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/3amRT182LwU/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/3amRT182LwU/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/3amRT182LwU/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "쌍떡잎식물",
+              "liveBroadcastContent": "none",
+              "publishTime": "2022-01-24T14:11:12Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "mB3w0qMfuCmb-k2UYcrl_zaO5Tc",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "Zdfx1IE6Cco"
+          },
+          "snippet": {
+              "publishedAt": "2021-12-17T12:00:12Z",
+              "channelId": "UCkwegMjATseS7obo5GW_YsQ",
+              "title": "겨울에 코딩도 하고 음악도 즐기기 좋아요 | 3 hour lofi hiphop mix in winter / lofi coding / beats to relax",
+              "description": "If you like the video, please give me a thumbs up and don't forget to subscribe to my channel : https://www.youtube.com/c/Lofi코딩 ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/Zdfx1IE6Cco/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/Zdfx1IE6Cco/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/Zdfx1IE6Cco/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Lofi 코딩",
+              "liveBroadcastContent": "none",
+              "publishTime": "2021-12-17T12:00:12Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "bnJlS5976GrDeu8QIOuggcKzXPk",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "1sTc7I20u3A"
+          },
+          "snippet": {
+              "publishedAt": "2021-06-07T03:00:01Z",
+              "channelId": "UCrDbKxbVlwPPssN5_8aPnww",
+              "title": "[𝒑𝒍𝒂𝒚𝒍𝒊𝒔𝒕] 이번 과제는 진짜 A+ 각이다. | 과제할 때 듣기 좋은 노래 모음",
+              "description": "[과제 플레이리스트 시리즈 바로가기] 과제 플레이리스트 1탄   https://youtu.be/1sTc7I20u3A 과제 플레이리스트 2탄   ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/1sTc7I20u3A/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/1sTc7I20u3A/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/1sTc7I20u3A/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "WAPPL 와플",
+              "liveBroadcastContent": "none",
+              "publishTime": "2021-06-07T03:00:01Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "jPnd4_gbJULCcR6MNomo9nOdzHk",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "iaXReFOr9YY"
+          },
+          "snippet": {
+              "publishedAt": "2020-08-31T07:01:44Z",
+              "channelId": "UCHhyu39yW-fip189tpllvvQ",
+              "title": "[PLAY LIST] 코딩 , 과제 할때 듣기 좋은 노래 모음 1hour lofi music",
+              "description": "자주 듣던 코딩 노래가 갑자기 없어졌네요.. :(",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/iaXReFOr9YY/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/iaXReFOr9YY/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/iaXReFOr9YY/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "덕후 뮤직 Music Nerds",
+              "liveBroadcastContent": "none",
+              "publishTime": "2020-08-31T07:01:44Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "86oWEIlk3YTLXCVjda2LhL-Tkak",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "V7v3z09m07s"
+          },
+          "snippet": {
+              "publishedAt": "2022-04-15T11:00:13Z",
+              "channelId": "UCkwegMjATseS7obo5GW_YsQ",
+              "title": "음악은 더 나은 기분으로 작업하는 데 도움이 됩니다 | 3 hour lofi hip hop mix / lofi study / work / chill beats",
+              "description": "If you like the video, please give me a thumbs up and don't forget to subscribe to my channel : https://www.youtube.com/c/Lofi코딩 ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/V7v3z09m07s/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/V7v3z09m07s/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/V7v3z09m07s/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Lofi 코딩",
+              "liveBroadcastContent": "none",
+              "publishTime": "2022-04-15T11:00:13Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "pLo3Vr9id6obUiekP46LwFUMk5o",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "RUDrYhTV1qc"
+          },
+          "snippet": {
+              "publishedAt": "2022-03-18T11:00:26Z",
+              "channelId": "UCkwegMjATseS7obo5GW_YsQ",
+              "title": "좋은 음악은 일을 빨리 끝내는 데 도움이 됩니다. | 3 hour lofi hiphop mix / lofi study / work / chill beats",
+              "description": "If you like the video, please give me a thumbs up and don't forget to subscribe to my channel : https://www.youtube.com/c/Lofi코딩 ...",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/RUDrYhTV1qc/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/RUDrYhTV1qc/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/RUDrYhTV1qc/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "Lofi 코딩",
+              "liveBroadcastContent": "none",
+              "publishTime": "2022-03-18T11:00:26Z"
+          }
+      },
+      {
+          "kind": "youtube#searchResult",
+          "etag": "TRjkCobkU3T1l3nAtB8T7QYUuFQ",
+          "id": {
+              "kind": "youtube#video",
+              "videoId": "9T11aHeg8ns"
+          },
+          "snippet": {
+              "publishedAt": "2021-08-01T12:39:35Z",
+              "channelId": "UCtRtVP8jFC-hjzRJ6EQhyGw",
+              "title": "[Playlist] 작업하면서 틀어놓기 좋은 노동요 국내음악 노래모음 플레이리스트 PART 2",
+              "description": "플레이리스트 #기리보이.",
+              "thumbnails": {
+                  "default": {
+                      "url": "https://i.ytimg.com/vi/9T11aHeg8ns/default.jpg",
+                      "width": 120,
+                      "height": 90
+                  },
+                  "medium": {
+                      "url": "https://i.ytimg.com/vi/9T11aHeg8ns/mqdefault.jpg",
+                      "width": 320,
+                      "height": 180
+                  },
+                  "high": {
+                      "url": "https://i.ytimg.com/vi/9T11aHeg8ns/hqdefault.jpg",
+                      "width": 480,
+                      "height": 360
+                  }
+              },
+              "channelTitle": "핑프",
+              "liveBroadcastContent": "none",
+              "publishTime": "2021-08-01T12:39:35Z"
+          }
+      }
+  ]
+}

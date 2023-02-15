@@ -1,0 +1,31 @@
+.list_item {
+  width: 60%;
+  display: flex;
+  padding: 1rem 8rem 1rem 2rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 3px 0px;  
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.iframe{
+  width: 10rem;
+  height: 6rem;
+}
+
+.title{
+  font-weight: 500;
+}
+
+.channelTitle {
+  font-size: 0.9rem;
+  color: var(--second-text);
+}
