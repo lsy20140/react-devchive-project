@@ -1,5 +1,5 @@
 import { useMutation, useQueryClient} from '@tanstack/react-query'
-import { updateTask } from '../api/firebase';
+import { removeTask, updateTask } from '../api/firebase';
 import { useAuthContext } from '../context/AuthContext';
 
 export default function useTasks() {
@@ -13,6 +13,12 @@ export default function useTasks() {
     } 
   })  
 
-  return {updateTaskStatus }
+  const deleteTask = useMutation((id) => removeTask(uid, id), {
+    onSuccess: () => {
+      queryClient.invalidateQueries(['tasks',uid]);
+    }
+  })
+
+  return {updateTaskStatus, deleteTask }
 
 }

@@ -101,3 +101,7 @@ export async function getTasks(userId) {
 export async function updateTask(userId, task) {
   return set(ref(db, `tasks/${userId}/${task.id}`), task)
 }
+
+export async function removeTask(userId, taskId) {
+  return remove(ref(db, `tasks/${userId}/${taskId}`))
+}

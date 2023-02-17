@@ -7,7 +7,7 @@ export default function TaskCard({id, status, tasks}) {
     <div className={styles.task_card}>
       <p>{status}</p>
       <ul className={styles.task_items}>
-        {tasks.map((task) => (
+        {tasks && tasks.map((task) => (
           <TaskItem
             key={task.id}
             task={task}
