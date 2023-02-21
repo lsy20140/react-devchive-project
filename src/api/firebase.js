@@ -105,3 +105,8 @@ export async function updateTask(userId, task) {
 export async function removeTask(userId, taskId) {
   return remove(ref(db, `tasks/${userId}/${taskId}`))
 }
+
+export async function addNewError(userId, error, imgUrl) {
+  const id = uuid();
+  return set(ref(db, `errors/${userId}/${id}`), {...error, id, imgUrl});
+}
