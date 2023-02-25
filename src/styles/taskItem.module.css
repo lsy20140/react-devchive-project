@@ -1,6 +1,6 @@
 .task_item {
   display: flex;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1rem 1.5rem 0;
   border-bottom: 1.5px solid rgba(219, 219, 219, 0.269);
   align-items: flex-start;
   gap: 0.3rem;
@@ -10,6 +10,22 @@
   flex: 1;
   outline: none;
   scale: 1.2;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--third-text);
+  padding: 0.3rem;
+  border-radius: 100%;
+}
+
+.icon:hover{
+  background-color:rgba(219, 219, 219, 0.269);
+  transform: rotate(15deg);
+  transition: 0.2s;
+  scale: 1.1;
+  color: var(--second-text);
 }
 
 
