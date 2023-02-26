@@ -110,3 +110,14 @@ export async function addNewError(userId, error, imgUrl) {
   const id = uuid();
   return set(ref(db, `errors/${userId}/${id}`), {...error, id, imgUrl});
 }
+
+export async function getErrors(userId) {
+  return get(ref(db, `errors/${userId}`))
+  .then((snapshot) => {
+    if(snapshot.exists()){
+      return Object.values(snapshot.val());
+    }
+    return [];
+  })
+}
+
