@@ -12,7 +12,8 @@ export default function ErrorArchive() {
 
   const hasErrors = errors && errors.length > 0;
   return (
-    <>
+    <div className='page_container'>
+      <h3>오류 모음</h3>
     {hasErrors &&
       <ul>
         {
@@ -23,6 +24,6 @@ export default function ErrorArchive() {
       </ul>
     }
 
-    </>
+    </div>
   )
 }

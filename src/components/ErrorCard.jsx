@@ -6,8 +6,8 @@ export default function ErrorCard({error, error:{cause, solution, imgUrl, create
     <div className={styles.list_item}>
       <img src={imgUrl}/>
       <div className={styles.content}>
-        <p>{cause}</p>
-        <p>{solution}</p>
+        <p className={styles.cause}>{cause}</p>
+        <p className={styles.solution}>{solution}</p>
         <p className={styles.time_ago}>{createdAt}</p>
       </div>
     </div>
