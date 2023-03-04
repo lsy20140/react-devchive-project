@@ -1,0 +1,42 @@
+
+
+.box {
+  width: fit-content;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 3px 0px;  
+  border-radius: 0.5rem;
+  padding: 1.5rem;  
+}
+
+.todo_container{
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.box p {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.total_stats{
+  flex: 1;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 3px 0px;  
+  border-radius: 0.5rem;
+  padding: 1.5rem; 
+}
+
+
+.total_stats_content{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.check_img{
+  width: 6rem;
+  height: 6rem;
+}
