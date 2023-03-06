@@ -16,6 +16,7 @@ import NewError from './pages/ErrorArchive/NewError';
 import MusicList from './pages/MusicList';
 import EditMemo from './pages/Memos/EditMemo';
 import MyWork from './pages/MyWork';
+import EditError from './pages/ErrorArchive/EditError';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
       {path: '/errors', element: <ErrorArchive/>},
       {path: '/errors/new', element: <NewError/>},
       {path: '/errors/:id', element: <ErrorDetail/>},
+      {path: '/errors/edit/:id', element: <EditError/>},
       {path: '/mywork', element: <MyWork/>},
       {path: '/music', element: <MusicList/>},
       {path: '/mypage', element: <Mypage/>},

@@ -121,3 +121,7 @@ export async function getErrors(userId) {
   })
 }
 
+export async function editErrorContents(userId, error) {
+  return set(ref(db,`errors/${userId}/${error.id}`), error)
+}
+
