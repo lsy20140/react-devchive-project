@@ -1,17 +1,12 @@
 import React from 'react'
-import { getMemos } from '../../api/firebase';
-import { useAuthContext } from '../../context/AuthContext'
-import {useQuery} from '@tanstack/react-query'
 import styles from '../../styles/memos.module.css'
 import MemoCard from '../../components/MemoCard';
 import {diffSec} from 'timeago.js/lib/utils/date'
+import useMemos from '../../hooks/useMemos';
 
 
 export default function Memos() {
-  const {uid} = useAuthContext();
-  const {data: memos} = useQuery(['memos', uid || ''], () => getMemos(uid), {
-    enabled: !!uid
-  })
+  const {memosQuery:{data: memos}} = useMemos();
   const hasMemos = memos && memos.length >0
 
   const date = new Date();
