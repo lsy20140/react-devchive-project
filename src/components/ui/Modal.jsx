@@ -1,15 +1,21 @@
 import React from 'react';
-import { removeMemo } from '../../api/firebase';
+import { removeError, removeMemo } from '../../api/firebase';
 import { useAuthContext } from '../../context/AuthContext';
 import styles from '../../styles/modal.module.css'
 import {useNavigate} from 'react-router-dom'
 
-export const Modal = ({ open, close, header, subText, memoId }) => {
+export const Modal = ({ open, close, header, subText, postId, type }) => {
   const navigate = useNavigate();
   const {uid} = useAuthContext();
   const handleDel = () => {
-    removeMemo(uid, memoId);
-    navigate(`/memos/`)
+    if(type==="memos"){
+      removeMemo(uid, postId);
+      navigate(`/${type}/`);
+    }
+    else if(type==="errors"){
+      removeError(uid, postId);
+      navigate(`/${type}/`);
+    }
   }
 
   return (
