@@ -27,6 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://wondrous-cajeta-c9a9c3.netlify.app",
   "browserslist": {
     "production": [
       ">0.2%",

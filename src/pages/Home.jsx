@@ -23,7 +23,9 @@ export default function Home() {
   const activeTasks = tasks && tasks.filter((task) => task.status === 'active')
 
   return (
-    <div className={styles.grid_container}>
+  <>
+    {user ?
+      <div className={styles.grid_container}>
       <div className={styles.box0}>
         <p>{user && user.displayName} 님의 Github 커밋 기록</p>
         <img src="https://ghchart.rshah.org/lsy20140" />
@@ -58,6 +60,10 @@ export default function Home() {
       </div>
       
 
-    </div>
+    </div> : <section><h3>로그인 후에 이용 가능합니다.</h3></section>
+    }
+  </>
+
+
   )
 }

@@ -31,13 +31,6 @@ export default function Header() {
             </ul>
           </div>
         }
-        
-        {/* {user &&
-          <div className={styles.logout} onClick={logout}>
-            <BiLogOut/>
-            <p>로그아웃</p>
-          </div>
-        } */}
 
       </div>
 
