@@ -26,7 +26,7 @@ export default function SideBar() {
           <HiOutlinePencilAlt className={styles.icon}/>
           <p>메모</p>
         </Link>
-        <Link to='/errorarchive'>
+        <Link to='/errors'>
           <MdOutlineErrorOutline className={styles.icon}/>
           <p>오류 모음</p>
         </Link>
@@ -49,7 +49,7 @@ export default function SideBar() {
           <MdAddCircle className={styles.add_icon}/>
         </Link>
         <hr/>
-        <Link to ='/memos/new'>
+        <Link to ='/errors/new'>
           <div>
             <MdOutlineErrorOutline/>
             <span>새 오류</span>

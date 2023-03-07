@@ -37,7 +37,7 @@ export default function AddTaskModal({ open, close, header }) {
 
 
   return (
-    <div className={open && styles.modal_bg}>
+    <div className={open ? styles.modal_bg : undefined}>
       <div className={styles.modal_container}>
         {open ? (
           <section>

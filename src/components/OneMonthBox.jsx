@@ -13,9 +13,9 @@ export default function OneMonthBox({month, cnt}) {
   return (
     <div className={styles.one_month}>
       <div className={styles.one_month_box} style={{ backgroundColor: `rgba(71, 84, 202, ${cnt/10})`}}>
-        {cnt}
+        <span>{cnt}</span>
       </div>
-      <p>{month === 0 ? '이번 달' :month+ '개월 전'}</p>
+      <p>{month === 0 ? '이번 달' :month+ '달 전'}</p>
     </div>
 
   )
