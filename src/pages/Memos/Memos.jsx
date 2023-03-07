@@ -16,7 +16,7 @@ export default function Memos() {
   })
   
   return (
-    <div className='page_container'>
+    <section >
       <h3 >나의 메모</h3>
       {!hasMemos && <p>메모가 없습니다.</p>}
       {hasMemos && 
@@ -27,6 +27,6 @@ export default function Memos() {
       </ul>
       }
 
-    </div>
+    </section>
   )
 }

@@ -9,6 +9,19 @@
   width: 100%;
 }
 
+.leftSide > img{
+  display: block;
+  padding-top: 2rem;
+  width: 8rem;
+}
+
+.leftSide > img:hover {
+  position: relative;
+  left: 0;
+  top: 0;
+  transition:all ease-in 0.2s;
+  transform: translate(200px, -30px) scale(4.0);
+}
 
 .leftSide label {
   display: inline-block;

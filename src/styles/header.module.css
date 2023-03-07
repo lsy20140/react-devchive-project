@@ -9,11 +9,12 @@
   z-index: 9;
   display: flex;
   justify-content: flex-end;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
 }
 
 .profile_box{
   display: flex;
-  margin-right: 6rem;
+  margin-right: 4rem;
   align-items: center;
 }
 
@@ -22,6 +23,7 @@
   align-items: center;
   color: var(--second-text);
   gap: 0.2rem;
+  cursor: pointer;
 }
 
 
@@ -56,6 +58,10 @@
 
 }
 
+.profile:hover {
+  color: black;
+}
+
 .profile:hover ul{
   display: block;
 }
@@ -82,5 +88,5 @@
   font-size: 0.85rem;
   color: #625F68;
   font-weight: 500;
-  margin: 0.4rem 0;
+  margin: 0.5rem 0;
 }

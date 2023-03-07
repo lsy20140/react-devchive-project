@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <div className={styles.grid_container}>
       <div className={styles.box0}>
-        <p>{user.displayName}님의 Github 커밋 기록</p>
+        <p>{user && user.displayName} 님의 Github 커밋 기록</p>
         <img src="https://ghchart.rshah.org/lsy20140" />
       </div>
       <div className={styles.box1}>
@@ -56,17 +56,14 @@ export default function Home() {
         </div>
       <div className={styles.box2}>
         <p>진행 중 🔥</p>
-        {hasTasks ? 
-          <ul className={styles.task_items}>
-            {activeTasks && activeTasks.map((task) => (
+        <ul className={styles.task_items}>
+            {(activeTasks && activeTasks.length >0) ? activeTasks.map((task) => (
               <TaskItem
                 key={task.id}
                 task={task}
               />
-            ))}
+            )) : <p>진행 중인 할 일이 없습니다.</p>}
           </ul>
-          : undefined
-        }
       </div>
       <div className={styles.box3}>
         <p>지난달에 작성한 메모</p>

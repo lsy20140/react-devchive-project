@@ -11,8 +11,12 @@
   background-color: var(--brand-base);
   box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 3px 0px;  
   border-radius: 0.5rem;
-  padding: 1.5rem;
+  padding: 1.3rem;
   color: var(--second-text);
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
+}
+
+.one_month_box > span{
+  color: black;
 }
