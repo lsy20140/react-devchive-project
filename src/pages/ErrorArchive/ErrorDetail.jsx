@@ -69,7 +69,7 @@ export default function ErrorDetail() {
         <div className={styles.right_side}>
           <h3>해결</h3>
           <div className={styles.refLink}>
-            <p className={styles.title}>참고한 링크</p>
+            <p>참고한 링크</p>
               <a href={refLink}
                 target="_blank"
                 rel="noopener noreferrer">{refLink}</a>

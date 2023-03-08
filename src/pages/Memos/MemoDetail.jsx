@@ -44,7 +44,13 @@ export default function MemoDetail() {
 
 
         </div>
-          <div className={styles.main_text}>{mainText.split("\n").map((line, i) => 
+        <div className={styles.refLink}>
+            <p>참고한 링크</p>
+              <a href={refLink}
+                target="_blank"
+                rel="noopener noreferrer"><span>{refLink}</span></a>
+          </div>
+        <div className={styles.main_text}>{mainText.split("\n").map((line, i) => 
             <span key={i}>{line}<br/></span>
           )}</div>
         </div>
