@@ -18,7 +18,7 @@ export default function Home() {
   const {monthDiff} = date();
   const {achieveRate} = stats();
 
-  const filteredMemos = memos && memos.filter((memo) => monthDiff(memo.createdAt) === 1 )
+  const filteredMemos = memos && memos.filter((memo) => monthDiff(memo.createdAt) === 0 )
 
   const activeTasks = tasks && tasks.filter((task) => task.status === 'active')
 
@@ -47,7 +47,7 @@ export default function Home() {
         }
       </div>
       <div className={styles.box3}>
-        <p>지난달에 작성한 메모</p>
+        <p>이번달에 작성한 메모</p>
         {filteredMemos && 
         <ul className={styles.memos}>
           {
