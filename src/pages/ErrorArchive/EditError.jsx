@@ -13,8 +13,8 @@ export default function EditError() {
   const {editError} = useErrors();
   const [updateError, setUpdateError] = useState({...error});
   const [file, setFile] = useState();
-  const [editorCntA, setEditorCntA] = useState([(Object.keys(updateError.codePackA)).length])
-  const [editorCntB, setEditorCntB] = useState([(Object.keys(updateError.codePackB)).length])
+  const [editorCntA, setEditorCntA] = useState([updateError.codePackA ? (Object.keys(updateError.codePackA)).length : ''])
+  const [editorCntB, setEditorCntB] = useState([updateError.codePackB ? (Object.keys(updateError.codePackB)).length : ''])
   const [codePackA, setCodePackA] = useState({...error.codePackA})
   const [codePackB, setCodePackB] = useState({...error.codePackB})
   const [success, setSuccess] = useState(false);
@@ -123,7 +123,7 @@ export default function EditError() {
             </label>
             <div className={styles.codePack}>
               
-              {Object.keys(error.codePackA).map((item, i) => (        
+              {error.codePackA && Object.keys(error.codePackA).map((item, i) => (        
                 <CodeEditor
                   className={styles.codeBox}
                   key={i}
@@ -145,7 +145,7 @@ export default function EditError() {
               <input type='button' name='editorB' value='+ 코드 추가' onClick={handleEditorCount}/>
             </label>
             <div className={styles.codePack}>
-              {Object.keys(error.codePackB).map((item, i) => (        
+              {error.codePackB && Object.keys(error.codePackB).map((item, i) => (        
                 <CodeEditor
                   className={styles.codeBox}
                   key={i}

@@ -10,7 +10,7 @@ export default function SideBar() {
     <div className={styles.sidebar}>
       <div className={styles.logo_content}>
         <Link to='/' className={styles.logo}>
-          <img src='logo.png'/>
+          <img width={'28px'} height={'28px'} src='logo.png'/>
           <p>devchive</p>
         </Link>
         

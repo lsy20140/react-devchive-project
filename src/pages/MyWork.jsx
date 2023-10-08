@@ -30,7 +30,7 @@ export default function MyWork() {
   return (
     <>
       { user ? 
-        <div className='page_container'>
+        <section>
         <div className={styles.top_box}>
           <h3>할 일</h3>
           <button onClick={openModal}><span>+ 할 일 추가</span></button>
@@ -78,7 +78,7 @@ export default function MyWork() {
 
 
 
-      </div> : <section><h3>로그인 후에 이용 가능합니다.</h3></section>
+      </section> : <section><h3>로그인 후에 이용 가능합니다.</h3></section>
 
       }
     </>

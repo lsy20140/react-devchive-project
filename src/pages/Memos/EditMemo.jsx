@@ -10,7 +10,7 @@ export default function EditMemo() {
   const {state:{memo}} = useLocation();
   const { editMemo } = useMemos();
   const [updateMemo, setUpdateMemo] = useState({...memo});
-  const [editorCnt, setEditorCnt] = useState([(Object.keys(updateMemo.codePack)).length]);
+  const [editorCnt, setEditorCnt] = useState([updateMemo.codePack ? (Object.keys(updateMemo.codePack)).length : '']);
   const [codePack, setCodePack] = useState({...memo.codePack})
 
   const handleChange = (e) => {
@@ -119,12 +119,12 @@ export default function EditMemo() {
               <input type='button' value='+ 코드 추가' onClick={handleEditorCount}/>
             </label><br/>  
             <div className={styles.codePack}>
-              { Object.keys(memo.codePack).map((item, i) => (        
+              {memo.codePack &&  Object.keys(memo.codePack).map((item, i) => (        
                   <CodeEditor
                     className={styles.codeBox}
                     key={i}
                     name={`code${i}`}
-                    value={codePack[Object.keys(codePack)[i]] ?? ''}
+                    value={codePack ? codePack[Object.keys(codePack)[i]] : ''}
                     language="js"
                     placeholder="코드를 입력하세요"
                     onChange={handleChange}
