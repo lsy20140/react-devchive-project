@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://devchive.netlify.app/">
+  <a href="https://wondrous-cajeta-c9a9c3.netlify.app/">
   <img src="./public/logo.png" width="100px" alt="devchive logo"/>
   </a>
 
@@ -23,7 +23,7 @@
 
 꼭 필요한 입력 항목으로만 구성된 템플릿을 통해 작성 형식에 대한 고민 없이 빠르고 간편하게 기록을 남길 수 있는 서비스입니다.
 
-👉🏻 [사이트 바로가기](https://devchive.netlify.app/)
+👉🏻 [사이트 바로가기](https://wondrous-cajeta-c9a9c3.netlify.app/)
 <br>
 <br>
 
