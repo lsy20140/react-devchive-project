@@ -21,9 +21,12 @@
 
 개발 공부 중 기록은 남기고 싶지만 텅텅 비어있는 입력란을 채우는 것이 막막하고 부담스러우셨나요?
 
-꼭 필요한 입력 항목으로만 구성된 템플릿을 통해 작성 형식에 대한 고민 없이 빠르고 간편하게 기록을 남길 수 있는 서비스입니다.
+꼭 필요한 입력 항목으로만 구성된 템플릿을 통해 작성 형식에 대한 고민 없이 빠르고 간편하게 기록을 남길 수 있는 서비스입니다.<br>
 
-👉🏻 [사이트 바로가기](https://wondrous-cajeta-c9a9c3.netlify.app/)
+👉🏻 [사이트 바로가기](https://wondrous-cajeta-c9a9c3.netlify.app/)<br><br>
+**테스트용 계정**<br>
+아이디: devchivetest@gmail.com<br>
+비밀번호: devchive1234
 <br>
 <br>
 
@@ -44,7 +47,7 @@
 
 |                                                                            구글 로그인                                                                             |                                                                       홈                                                                        |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------: |
-| <img width="100%" src="https://github.com/lsy20140/react-devchive-project/assets/68267094/a52c9abe-2348-4188-95e6-cfd4a77af170"/> | <img width="100%" src="https://github.com/lsy20140/react-devchive-project/assets/68267094/3453707f-61b6-4024-b909-d64b1fc851dc"/> |
+| <img width="100%" src="https://github.com/lsy20140/react-devchive-project/assets/68267094/a52c9abe-2348-4188-95e6-cfd4a77af170"/> | <img width="100%" src="https://github.com/lsy20140/react-devchive-project/assets/68267094/6e2042af-a28d-4afa-9ede-35773b1a9d7a"/> |
 |                                                                            **메모 모음**                                                                            |                                                                       **새 메모 추가**                                                                        |
 |       <img width="100%" src="https://github.com/lsy20140/react-devchive-project/assets/68267094/14e8c528-f33c-4903-8e83-97d61dd1dd82"/>       |  <img width="100%" src="https://github.com/lsy20140/react-devchive-project/assets/68267094/433b7aa4-3d43-466f-aabc-ba1994790b35"/>   |
 |                                                                          **메모 상세**                                                                           |                                                                      **메모 수정**                                                                       |
@@ -54,4 +57,5 @@
 |                                                                          **오류 상세**                                                                           |                                                                      **뮤직(유튜브 API)**                                                                       |
 |                <img width="100%" src="https://github.com/lsy20140/react-devchive-project/assets/68267094/0d30564d-3ab7-4015-90be-16381bd75e53"/>                 |          <img width="100%" src="https://github.com/lsy20140/react-devchive-project/assets/68267094/be0f0e25-cffe-4732-90c5-63890324a133"/>          |
 |                                                                          **할 일 목록**                                                                           |                                                                      **할 일 추가**                                                                       |
-|                <img width="100%" src="https://github.com/lsy20140/react-devchive-project/assets/68267094/06484f44-a89c-4f64-a1fd-a656fa1e8e0f"/>                 |          <img width="100%" src="https://github.com/lsy20140/react-devchive-project/assets/68267094/af62f7d9-8f6c-411d-ad1e-53af0a1a829b"/>          |
+|                <img width="100%" src="https://github.com/lsy20140/react-devchive-project/assets/68267094/398f55b0-4ca0-4865-9317-c0a29d9ac25c"/>             |         <img width="100%" src="https://github.com/lsy20140/react-devchive-project/assets/68267094/de965cbb-7bfa-44b5-a40f-e47d1dfe6808"/>
+          |
